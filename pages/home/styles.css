@@ -8,6 +8,86 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+.tabList {
+  list-style: none;
+  padding-left: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.tab {
+  color: black;
+  display: inline-block;
+  corner-radius: 0;
+  padding: 20px 0;
+  text-align: center;
+  width: 50%;
+  outline-style: none;
+}
+
+.tab:hover {
+  background-color: #ececec;
+}
+
+.tab[role=tab][aria-selected=true] {
+  color: deepskyblue;
+  border-bottom: 3px solid deepskyblue;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionTitleText {
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 3px solid black;
+}
+
+.sponsorList {
+  list-style: none;
+}
+
+.sponsorList > li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.sponsorList img {
+  height: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 60px 0;
+  background-color: #5b5f68;
+  color: white;
+}
+
+.footer > .container > * {
+  margin: 6px 0;
+}
+
+.footer input {
+  width: 320px;
+  height: 26px;
+  font-size: 1.5em;
+  padding: 2px 5px;
+  outline-style: none;
+}
+
+.footerButton {
+  width: 320px;
+  background-color: deepskyblue;
+}
+
 @media screen and (max-width: 1024px) {
 
   .content {

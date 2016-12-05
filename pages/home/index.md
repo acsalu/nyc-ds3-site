@@ -1,10 +1,10 @@
 ---
-title: React Static Boilerplate
+title: NYC Data Science Seminar Series (DS3)
 ---
 
-## Welcome!
+## NYC Data Science Seminar Series (DS3)
 
-This is a single-page application powered by React and Material Design Lite (MDL).
+The DS3 organizing committee comprises
 
-https://github.com/kriasoft/react-static-boilerplate
+Leon Bottou (Facebook), Vasant Dhar (NYU), Mor Naaman (Cornell Tech), Duncan Watts (MSR NYC), Chris Wiggins (Columbia University)
 

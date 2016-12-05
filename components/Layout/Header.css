@@ -17,6 +17,10 @@
   text-decoration: none;
 }
 
+.header {
+  background-color: deepskyblue;
+}
+
 @media screen and (max-width: 1024px) {
 
   .header {
