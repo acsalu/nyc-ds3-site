@@ -1,0 +1,6 @@
+{
+  "name": "OrganizerList",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OrganizerList.js"
+}

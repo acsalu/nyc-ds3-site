@@ -1,0 +1,42 @@
+.organizerList {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0 auto;
+}
+
+.organizerList li {
+  display: inline-block;
+  width: 20%;
+}
+
+.organizerList li a {
+  margin: 0 auto;
+}
+
+.organizerList img {
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.organizerList li a p {
+  text-align: center;
+}
+
+.eventItem {
+  list-style: none;
+  background-color: #ececec;
+  padding: 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #bbb;
+}
+
+.eventItem a {
+  color: black;
+}
+
+.eventItem:hover {
+  -webkit-box-shadow: 0px 0px 3px #bbb;
+  -moz-box-shadow: 0px 0px 3px #bbb;
+  box-shadow: 0px 0px 3px #bbb;
+}

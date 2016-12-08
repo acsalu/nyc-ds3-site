@@ -8,6 +8,35 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+.heroInnerWrapper > div {
+  display: inline-block;
+}
+
+.siteTitle {
+  /*border: 6px solid white;*/
+  /*padding: 10px 20px;*/
+}
+
+.acronymWrapper {
+  border: 7px solid white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  -webkit-box-shadow: 0px 2px 0px black;
+  -moz-box-shadow:  0px 2px 0px black;
+  box-shadow:  0px 2px 0px gray;
+  display: inline-block;
+}
+
+.acronym {
+  height: 60px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-size: 30px;
+
+}
+
 .tabList {
   list-style: none;
   padding-left: 0;
@@ -23,6 +52,7 @@
   text-align: center;
   width: 50%;
   outline-style: none;
+  font-size: 1.2em;
 }
 
 .tab:hover {
@@ -30,8 +60,8 @@
 }
 
 .tab[role=tab][aria-selected=true] {
-  color: deepskyblue;
-  border-bottom: 3px solid deepskyblue;
+  color: orange;
+  border-bottom: 3px solid orange;
 }
 
 .sectionTitle {
@@ -67,7 +97,7 @@
 .footer {
   margin-top: 100px;
   padding: 60px 0;
-  background-color: #5b5f68;
+  background-color: black;
   color: white;
 }
 
@@ -86,6 +116,11 @@
 .footerButton {
   width: 320px;
   background-color: deepskyblue;
+}
+
+.subsectionBeginning {
+  display: block;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 1024px) {

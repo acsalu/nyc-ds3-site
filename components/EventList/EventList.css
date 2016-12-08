@@ -1,8 +1,13 @@
+.eventList {
+  list-style: none;
+  padding: 0px 40px;
+  margin-top: 20px;
+}
+
 .eventItem {
   list-style: none;
   background-color: #ececec;
-  padding: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #bbb;
 }
 
@@ -14,4 +19,91 @@
   -webkit-box-shadow: 0px 0px 3px #bbb;
   -moz-box-shadow: 0px 0px 3px #bbb;
   box-shadow: 0px 0px 3px #bbb;
+}
+
+.eventInnerWraper {
+  display: flex;
+}
+
+.eventInnerWraper > div {
+  height: 100px;
+}
+
+/* Event date */
+
+.eventDate {
+  background-color: orange;
+  color: white;
+  width: 100px;
+  font-size: 2em;
+}
+
+.eventDate > div {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.eventMonth {
+  font-size: 14px;
+}
+
+.eventDay {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.eventWeekday {
+  font-size: 14px;
+}
+
+/* Event details */
+
+.eventDetails {
+  flex-grow: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.eventDetails > div {
+  padding-left: 10px;
+}
+
+.eventTitle {
+  padding-top: 8px;
+  font-weight: 300;
+  font-size: 1.6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eventTitle > i {
+  padding-right: 10px;
+  opacity: 0.0;
+}
+
+.eventItem:hover .eventTitle > i {
+  opacity: 1.0;
+}
+
+.eventLocation {
+  background-color: black;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+
+.eventTime {
+  color: gray;
+}
+
+.eventTime > i {
+  margin-left: -2px;
+  margin-right: 3px;
+}
+
+.eventLocation > i {
+  margin-right: 6px;
 }

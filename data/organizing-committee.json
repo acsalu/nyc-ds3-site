@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Leon Bottou",
+    "organization": "Facebook",
+    "profilePic": "./imgs/bottou.jpg",
+    "website": "http://leon.bottou.org/"
+  },
+  {
+    "name": "Vasant Dhar",
+    "organization": "NYU",
+    "profilePic": "./imgs/dhar.jpg",
+    "website": "http://people.stern.nyu.edu/vdhar/"
+  },
+  {
+    "name": "Mor Naaman",
+    "organization": "Cornell Tech",
+    "profilePic": "./imgs/naaman.jpg",
+    "website": "https://people.jacobs.cornell.edu/mor/"
+  },
+  {
+    "name": "Duncan Watts",
+    "organization": "MSR NYC",
+    "profilePic": "./imgs/watts.jpg",
+    "website": "https://www.microsoft.com/en-us/research/people/duncan/"
+  },
+  {
+    "name": "Chris Wiggins",
+    "organization": "Columbia University",
+    "profilePic": "./imgs/wiggins.jpg",
+    "website": "http://www.columbia.edu/~chw2/"
+  }
+]

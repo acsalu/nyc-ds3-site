@@ -1,16 +1,20 @@
 [
   {
-    "title": "NYC Data Science Seminar Series Presents: Matt Salganik, Social Research in the Age of Big Data",
+    "title": "Matt Salganik, Social Research in the Age of Big Data",
     "link": "https://www.eventbrite.com/e/nyc-data-science-seminar-series-presents-matt-salganik-social-research-in-the-age-of-big-data-tickets-26921832927",
     "location": "Cornell Tech, New York",
-    "time": "THU, SEP 1 6:00 PM",
+    "weekday": "THU",
+    "date": "SEP 1",
+    "time": "6:00 PM",
     "tags": ["ScienceTech", "Seminar"]
   },
   {
     "title": "Human Decisions and Machine Predictions",
     "link": "https://www.eventbrite.com/e/human-decisions-and-machine-predictions-tickets-25540480264#",
     "location": "Warren Weaver Hall Room 109, New York",
-    "time": "THU, JUN 2 6:00 PM",
+    "weekday": "THU",
+    "date": "JUN 2",
+    "time": "6:00 PM",
     "tags": ["Business", "Conference"]
   }
 ]

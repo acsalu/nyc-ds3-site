@@ -15,9 +15,11 @@ import s from './styles.css';
 import { title, html } from './index.md';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Button from '../../components/Button';
+import OrganizerList from '../../components/OrganizerList';
 
 import liveEvents from './liveEvents.json';
 import events from './events.json';
+import organizers from '../../data/organizing-committee.json';
 
 class HomePage extends React.Component {
 
@@ -41,15 +43,27 @@ class HomePage extends React.Component {
     return (
       <Layout className={s.content}>
         <section style={styles.hero}>
-          <div className={s.container}>
-            <h1>NYC Data Science Seminar Series (DS3)</h1>
-            <p>The DS3 organizing committee comprises <br />
-            Leon Bottou (Facebook), Vasant Dhar (NYU), Mor Naaman (Cornell Tech), Duncan Watts (MSR NYC), Chris Wiggins (Columbia University)</p>
+          <div className={`${s.container} ${s.heroInnerWrapper}`}>
+            <div className={s.acronymWrapper}>
+              <div className={s.acronym}>
+                NYC<br/>DS3
+              </div>
+            </div>
+            <h1 className={s.siteTitle}>NYC Data Science<br/>Seminar Series</h1>
           </div>
         </section>
 
         <section className={s.container}>
-          <a name="events">
+
+          <a name="sponsors" className={s.subsectionBeginning}>
+            <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Sponsors</span></h4>
+          </a>
+          <ul className={s.sponsorList}>
+            <li><a href=""><img src="./sponsor-fb-logo.png" alt="Facebook" /></a></li>
+            <li><a href=""><img src="./sponsor-msr-logo.jpg" alt="Microsoft Research" /></a></li>
+          </ul>
+
+          <a name="events" className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Events</span></h4>
           </a>
 
@@ -76,13 +90,10 @@ class HomePage extends React.Component {
             </TabPanel>
           </Tabs>
 
-          <a name="sponsors">
-            <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Sponsors</span></h4>
+          <a name="organizers" className={s.subsectionBeginning}>
+            <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Organizing Committee</span></h4>
           </a>
-          <ul className={s.sponsorList}>
-            <li><a href=""><img src="./sponsor-fb-logo.png" alt="Facebook" /></a></li>
-            <li><a href=""><img src="./sponsor-msr-logo.jpg" alt="Microsoft Research" /></a></li>
-          </ul>
+          <OrganizerList organizers={organizers}/>
         </section>
 
         <section className={s.footer}>
@@ -100,10 +111,13 @@ class HomePage extends React.Component {
 
 const styles = {
   hero: {
-    padding: 100,
+    padding: 350,
     backgroundColor: '#5b5f68',
     color: 'white',
-    textAlign: 'center'
+    textAlign: 'center',
+    background: 'url(\'./imgs/bg.jpg\')',
+    backgroundSize: '100% auto',
+    backgroundRepeat: 'no-repeat',
   }
 };
 
