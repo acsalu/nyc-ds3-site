@@ -10,17 +10,42 @@
 }
 
 .organizerList li a {
+  text-decoration: none;
   margin: 0 auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.organizerList li a:hover {
+  color: orange;
+}
+
+.organizerList li a:hover img {
+  border-color: orange;
 }
 
 .organizerList img {
   height: 100px;
   border-radius: 50px;
-  border: 2px solid black;
+  border: 3px solid gray;
+  margin: 0 auto;
 }
 
 .organizerList li a p {
   text-align: center;
+}
+
+.organizerName {
+  margin-top: 7px;
+  margin-bottom: -2px;
+  font-size: 16px;
+}
+
+.organizerOrganization {
+  font-size: 12px;
+  color: gray;
 }
 
 .eventItem {

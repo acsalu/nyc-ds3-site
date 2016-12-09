@@ -66,32 +66,54 @@
 
 .sectionTitle {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .sectionTitleText {
-  color: black;
-  padding-bottom: 4px;
-  border-bottom: 3px solid black;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 16px 30px;
+}
+
+.sponsoredByText {
+  text-align: left;
+  background-color: black;
+  min-width: 50px;
+  display: inline-block;
+  float: left;
+  padding: 16px 30px;
 }
 
 .sponsorList {
+  margin-top: 150px;
   list-style: none;
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 .sponsorList > li {
   display: inline-block;
-  margin-right: 60px;
+  margin: 15px 60px 15px 0;
 }
 
 .sponsorList img {
-  height: 60px;
+  height: auto;
+  max-height: 100px;
+  max-width: 300px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 960px;
   width: 100%;
+}
+
+.container.contentSection {
+  margin-top: -150px;
 }
 
 .footer {
@@ -106,22 +128,39 @@
 }
 
 .footer input {
-  width: 320px;
   height: 26px;
-  font-size: 1.5em;
-  padding: 2px 5px;
   outline-style: none;
 }
 
 .footerButton {
-  width: 320px;
-  background-color: deepskyblue;
+  background-color: orange;
 }
 
 .subsectionBeginning {
   display: block;
   margin-top: 100px;
 }
+
+.subscribeMailingList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.subscribeMailingList > * {
+  width: 100%;
+}
+
+.subscribeMailingList > p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.subscribeMailingList i {
+  margin-right: 10px;
+}
+
 
 @media screen and (max-width: 1024px) {
 

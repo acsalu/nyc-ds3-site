@@ -50,18 +50,20 @@ class HomePage extends React.Component {
               </div>
             </div>
             <h1 className={s.siteTitle}>NYC Data Science<br/>Seminar Series</h1>
+
+            <h4 className={s.sponsoredByText}>Spnsored by</h4>
+            <ul className={s.sponsorList}>
+              <li><a href=""><img src="./imgs/logos/nyu_stacked_color.png" alt="New York University" /></a></li>
+              <li><a href="https://tech.cornell.edu"><img src="./imgs/logos/T_Filled_Manhattan_Map.png" alt="Microsoft Research" /></a></li>
+              <li><a href=""><img src="./sponsor-fb-logo.png" alt="Facebook" /></a></li>
+              <br/>
+              <li><a href=""><img src="./imgs/logos/columbia-university.png" alt="Columbia University" /></a></li>
+              <li><a href=""><img src="./imgs/logos/msr_logo.png" alt="Microsoft Research" /></a></li>
+            </ul>
           </div>
         </section>
 
-        <section className={s.container}>
-
-          <a name="sponsors" className={s.subsectionBeginning}>
-            <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Sponsors</span></h4>
-          </a>
-          <ul className={s.sponsorList}>
-            <li><a href=""><img src="./sponsor-fb-logo.png" alt="Facebook" /></a></li>
-            <li><a href=""><img src="./sponsor-msr-logo.jpg" alt="Microsoft Research" /></a></li>
-          </ul>
+        <section className={`${s.container} ${s.contentSection}`}>
 
           <a name="events" className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Events</span></h4>
@@ -90,7 +92,7 @@ class HomePage extends React.Component {
             </TabPanel>
           </Tabs>
 
-          <a name="organizers" className={s.subsectionBeginning}>
+          <a name="organizing-committee" className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Organizing Committee</span></h4>
           </a>
           <OrganizerList organizers={organizers}/>
@@ -98,9 +100,11 @@ class HomePage extends React.Component {
 
         <section className={s.footer}>
           <div className={s.container}>
-            <p>Join our mailing list</p>
-            <input type="text" placeholder="email address"/> <br/>
-            <Button className={s.footerButton}>Subscribe</Button>
+            <div className={s.subscribeMailingList}>
+              <p><i className="fa fa-envelope-o"></i>Join our mailing list</p>
+              <input type="text" placeholder="email address"/> <br/>
+              <Button className={s.footerButton}>Subscribe</Button>
+            </div>
           </div>
         </section>
       </Layout>

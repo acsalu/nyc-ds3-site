@@ -26,7 +26,8 @@ class OrganizerList extends React.Component {
             <a href={organizer.website} target="_blank">
               <div>
                 <img src={organizer.profilePic} />
-                <p>{organizer.name}</p>
+                <p className={s.organizerName}>{organizer.name}</p>
+                <p className={s.organizerOrganization}>{organizer.organization}</p>
               </div>
             </a>
           </li>
