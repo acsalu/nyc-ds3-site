@@ -1,6 +1,6 @@
 [
   {
-    "name": "Leon Bottou",
+    "name": "Léon Bottou",
     "organization": "Facebook",
     "profilePic": "./imgs/bottou.jpg",
     "website": "http://leon.bottou.org/"
@@ -19,7 +19,7 @@
   },
   {
     "name": "Duncan Watts",
-    "organization": "MSR NYC",
+    "organization": "Microsoft Research NYC",
     "profilePic": "./imgs/watts.jpg",
     "website": "https://www.microsoft.com/en-us/research/people/duncan/"
   },
