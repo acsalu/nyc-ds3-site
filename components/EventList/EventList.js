@@ -19,37 +19,74 @@ class EventList extends React.Component {
       );
     }
 
+    const eventsByYear = {};
+    for (let i = 0; i < this.props.events.length; ++i) {
+      const event = this.props.events[i];
+      const year = event.year;
+      if (eventsByYear[year] === undefined) {
+        eventsByYear[year] = [];
+      }
+      eventsByYear[year].push(event);
+    }
+
+    const yearsSortedDescending = Object.keys(eventsByYear).sort().reverse();
+    let eventSubLists = [];
+    for (let i = 0; i < yearsSortedDescending.length; ++i) {
+      const year = yearsSortedDescending[i];
+      eventSubLists.push(<EventSubList key={year} events={eventsByYear[year]} subListTitle={String(year)} />);
+    }
+
     return (
       <ul className={s.eventList}>
-        {this.props.events.map((event, i) => {
-          const eventMonth = event.date.substring(0, 3);
-          const eventDay = event.date.substring(4, 5);
-          return (
-            <li key={i} className={s.eventItem}>
-              <a href={event.link} style={styles.eventItemAnchor} target='_blank'>
-                <div className={s.eventInnerWraper}>
-                  <div className={s.eventDate}>
-                    <div className={s.eventMonth}>{eventMonth}</div>
-                    <div className={s.eventDay}>{eventDay}</div>
-                    <div className={s.eventWeekday}>{event.weekday}</div>
-                  </div>
-                  <div className={s.eventDetails}>
-                    <div className={s.eventTitle}>
-                      <div>{event.title}</div>
-                      <i className='fa fa-external-link'></i>
-                    </div>
-                    <div className={s.eventTime}><i className='fa fa-clock-o'></i>{event.time}</div>
-                    <div className={s.eventLocation}><i className='fa fa-map-marker'></i>{event.location}</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          )}
-        )}
+        {eventSubLists}
       </ul>
     );
   }
 
+}
+
+class EventSubList extends React.Component {
+
+  static propTypes = {
+    events: PropTypes.array.isRequired,
+    subListTitle: PropTypes.string.isRequired
+  };
+
+  render() {
+
+    return (
+      <div className={s.eventSubListContainer}>
+        <div className={s.eventSubListTitle}>{this.props.subListTitle}</div>
+        <ul className={s.eventSubList}>
+          {this.props.events.map((event, i) => {
+            const eventMonth = event.date.substring(0, 3);
+            const eventDay = event.date.substring(4, 5);
+            return (
+              <li key={i} className={s.eventItem}>
+                <a href={event.link} style={styles.eventItemAnchor} target='_blank'>
+                  <div className={s.eventInnerWraper}>
+                    <div className={s.eventDate}>
+                      <div className={s.eventMonth}>{eventMonth}</div>
+                      <div className={s.eventDay}>{eventDay}</div>
+                      <div className={s.eventWeekday}>{event.weekday}</div>
+                    </div>
+                    <div className={s.eventDetails}>
+                      <div className={s.eventTitle}>
+                        <div>{event.title}</div>
+                        <i className='fa fa-external-link'></i>
+                      </div>
+                      <div className={s.eventTime}><i className='fa fa-clock-o'></i>{event.time}</div>
+                      <div className={s.eventLocation}><i className='fa fa-map-marker'></i>{event.location}</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            )}
+          )}
+        </ul>
+      </div>
+    );
+  }
 }
 
 

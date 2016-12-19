@@ -1,6 +1,6 @@
-.eventList {
+.eventSubList {
   list-style: none;
-  padding: 0px 40px;
+  padding: 0;
 }
 
 .eventItem {
@@ -72,7 +72,7 @@
 .eventTitle {
   padding-top: 8px;
   font-weight: 300;
-  font-size: 1.6em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,4 +105,19 @@
 
 .eventLocation > i {
   margin-right: 6px;
+}
+
+.eventSubListContainer {
+  padding: 0px 40px;
+  margin-bottom: 40px;
+}
+
+.eventSubListTitle {
+  font-size: 1.2em;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #607d8b;
+  color: white;
+  width: 100px;
+  margin-bottom: 10px;
 }

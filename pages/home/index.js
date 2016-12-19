@@ -17,8 +17,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Button from '../../components/Button';
 import OrganizerList from '../../components/OrganizerList';
 
-import liveEvents from './liveEvents.json';
-import events from './events.json';
+import liveEvents from './live-events.json';
+import events from './past-events.json';
 import organizers from '../../data/organizing-committee.json';
 
 class HomePage extends React.Component {
@@ -43,23 +43,33 @@ class HomePage extends React.Component {
     return (
       <Layout className={s.content}>
         <section style={styles.hero}>
+          <ul className={`${s.sponsorList} ${s.participatings}`}>
+            <li><a href=""><img src="./imgs/logos/nyu_short_white.png" alt="New York University" /></a></li>
+            <li><a href="https://tech.cornell.edu"><img src="./imgs/logos/cornell-tech-logo.png" alt="Microsoft Research" /></a></li>
+            <li><a href=""><img src="./imgs/logos/Facebook-06-2015-White-on-Blue.png" alt="Facebook" /></a></li>
+            <br/>
+            <li><a href=""><img src="./imgs/logos/CU-logo.png" alt="Columbia University" /></a></li>
+            <li><a href=""><img src="./imgs/logos/Microsoft-logo_rgb_wht.png" alt="Microsoft Research" /></a></li>
+          </ul>
           <div className={`${s.container} ${s.heroInnerWrapper}`}>
             <div className={s.acronymWrapper}>
               <div className={s.acronym}>
                 NYC<br/>DS3
               </div>
             </div>
+
             <h1 className={s.siteTitle}>NYC Data Science<br/>Seminar Series</h1>
 
-            <h4 className={s.sponsoredByText}>Spnsored by</h4>
-            <ul className={s.sponsorList}>
-              <li><a href=""><img src="./imgs/logos/nyu_stacked_color.png" alt="New York University" /></a></li>
-              <li><a href="https://tech.cornell.edu"><img src="./imgs/logos/T_Filled_Manhattan_Map.png" alt="Microsoft Research" /></a></li>
-              <li><a href=""><img src="./sponsor-fb-logo.png" alt="Facebook" /></a></li>
-              <br/>
-              <li><a href=""><img src="./imgs/logos/columbia-university.png" alt="Columbia University" /></a></li>
-              <li><a href=""><img src="./imgs/logos/msr_logo.png" alt="Microsoft Research" /></a></li>
-            </ul>
+
+            <div className={s.sponsors}>
+              <div className={s.sponsorsInnerWrapper}>
+                <h4><span className={s.sectionTitleText}>Sponsored by</span></h4>
+                <ul className={s.sponsorList}>
+                  <li><a href="">Facebook</a></li>
+                  <li><a href="">Microsoft</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -115,7 +125,8 @@ class HomePage extends React.Component {
 
 const styles = {
   hero: {
-    padding: 350,
+    paddingTop: 60,
+    paddingBottom: 60,
     backgroundColor: '#5b5f68',
     color: 'white',
     textAlign: 'center',

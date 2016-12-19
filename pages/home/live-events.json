@@ -6,6 +6,7 @@
     "weekday": "THU",
     "date": "SEP 1",
     "time": "6:00 PM",
+    "year": 2016,
     "tags": ["ScienceTech", "Seminar"]
   },
   {
@@ -15,6 +16,7 @@
     "weekday": "THU",
     "date": "JUN 2",
     "time": "6:00 PM",
+    "year": 2016,
     "tags": ["Business", "Conference"]
   },
   {
@@ -24,6 +26,7 @@
     "weekday": "THU",
     "date": "SEP 1",
     "time": "6:00 PM",
+    "year": 2016,
     "tags": ["ScienceTech", "Seminar"]
   },
   {
@@ -33,6 +36,7 @@
     "weekday": "THU",
     "date": "JUN 2",
     "time": "6:00 PM",
+    "year": 2016,
     "tags": ["Business", "Conference"]
   }
 ]
