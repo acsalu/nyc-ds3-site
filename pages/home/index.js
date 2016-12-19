@@ -75,9 +75,10 @@ class HomePage extends React.Component {
 
         <section className={`${s.container} ${s.contentSection}`}>
 
-          <a name="events" className={s.subsectionBeginning}>
+          <a name="events"></a>
+          <div className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Events</span></h4>
-          </a>
+          </div>
 
           <Tabs
             onSelect={this.handleSelect}
@@ -102,9 +103,10 @@ class HomePage extends React.Component {
             </TabPanel>
           </Tabs>
 
-          <a name="organizing-committee" className={s.subsectionBeginning}>
+          <a name="organizing-committee"></a>
+          <div className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Organizing Committee</span></h4>
-          </a>
+          </div>
           <OrganizerList organizers={organizers}/>
         </section>
 
