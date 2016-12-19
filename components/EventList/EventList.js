@@ -3,6 +3,7 @@
  */
 
 import React, { PropTypes } from 'react';
+import Button from '../Button';
 import s from './EventList.css';
 
 class EventList extends React.Component {
@@ -15,7 +16,13 @@ class EventList extends React.Component {
   render() {
     if (this.props.events.length === 0) {
       return (
-        <div style={styles.noEvent}>{this.props.noEventText}</div>
+        <div className={s.noEventConatiner}>
+          <div className={s.noEventText}>{this.props.noEventText}</div>
+          <div className={s.subscribeMailingList}>
+            <input placeholder="email address" type="text"/>
+            <Button className={s.subscribeButton}>Subscribe</Button>
+          </div>
+        </div>
       );
     }
 
@@ -91,9 +98,6 @@ class EventSubList extends React.Component {
 
 
 const styles = {
-  noEvent: {
-    minHeight: 400
-  },
   eventItemAnchor: {
     textDecoration: 'none'
   }

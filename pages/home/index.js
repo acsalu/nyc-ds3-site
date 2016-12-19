@@ -44,12 +44,12 @@ class HomePage extends React.Component {
       <Layout className={s.content}>
         <section style={styles.hero}>
           <ul className={`${s.sponsorList} ${s.participatings}`}>
-            <li><a href=""><img src="./imgs/logos/nyu_short_white.png" alt="New York University" /></a></li>
+            <li><a href="http://www.nyu.edu/"><img src="./imgs/logos/nyu_short_white.png" alt="New York University" /></a></li>
             <li><a href="https://tech.cornell.edu"><img src="./imgs/logos/cornell-tech-logo.png" alt="Microsoft Research" /></a></li>
-            <li><a href=""><img src="./imgs/logos/Facebook-06-2015-White-on-Blue.png" alt="Facebook" /></a></li>
+            <li><a href="http://newsroom.fb.com/company-info/"><img src="./imgs/logos/Facebook-06-2015-White-on-Blue.png" alt="Facebook" /></a></li>
             <br/>
-            <li><a href=""><img src="./imgs/logos/CU-logo.png" alt="Columbia University" /></a></li>
-            <li><a href=""><img src="./imgs/logos/Microsoft-logo_rgb_wht.png" alt="Microsoft Research" /></a></li>
+            <li><a href="http://www.columbia.edu/"><img src="./imgs/logos/CU-logo.png" alt="Columbia University" /></a></li>
+            <li><a href="http://www.microsoft.com/"><img src="./imgs/logos/Microsoft-logo_rgb_wht.png" alt="Microsoft Research" /></a></li>
           </ul>
           <div className={`${s.container} ${s.heroInnerWrapper}`}>
             <div className={s.acronymWrapper}>
@@ -84,14 +84,14 @@ class HomePage extends React.Component {
             selectedIndex={0}
           >
             <TabList className={s.tabList}>
-              <Tab className={s.tab}>{"LIVE EVENTS " + liveEvents.length}</Tab>
-              <Tab className={s.tab}>{"PAST EVENTS " + pastEvents.length}</Tab>
+              <Tab className={s.tab}>{"LIVE EVENTS (" + liveEvents.length + ")"}</Tab>
+              <Tab className={s.tab}>{"PAST EVENTS (" + pastEvents.length + ")"}</Tab>
             </TabList>
 
             <TabPanel>
               <EventList
                 events={liveEvents}
-                noEventText="Sorry, there are no upcoming events."
+                noEventText="More events to be scheduled soon — sign up to our mailing list to be notified."
               />
             </TabPanel>
             <TabPanel>

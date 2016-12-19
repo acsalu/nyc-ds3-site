@@ -121,3 +121,28 @@
   width: 100px;
   margin-bottom: 10px;
 }
+
+/* No event */
+.noEventConatiner {
+  padding-top: 40px;
+}
+
+.noEventText {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.subscribeMailingList {
+  margin-top: 20px;
+}
+
+.subscribeMailingList input {
+  outline-style: none;
+  height: 30px;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.subscribeButton {
+  background-color: orange;
+}
