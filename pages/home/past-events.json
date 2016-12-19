@@ -10,7 +10,7 @@
     "tags": ["ScienceTech", "Seminar"]
   },
   {
-    "title": "Human Decisions and Machine Predictions",
+    "title": "Jon Kleinberg, Human Decisions and Machine Predictions",
     "link": "https://www.eventbrite.com/e/human-decisions-and-machine-predictions-tickets-25540480264#",
     "location": "Warren Weaver Hall Room 109, New York",
     "weekday": "THU",
@@ -20,7 +20,7 @@
     "tags": ["Business", "Conference"]
   },
   {
-    "title": "From \"In\" to \"Over\": Behavioral Experiments on Whole-Network Computation",
+    "title": "Michael Kearns, From \"In\" to \"Over\": Behavioral Experiments on Whole-Network Computation",
     "link": "https://www.microsoft.com/en-us/research/event/msr-nyc-data-science-seminar-series/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "THU",
@@ -30,7 +30,7 @@
     "tags": []
   },
   {
-    "title": "On A Scale From 1 to 5, How Much Confidence Do You Have in Survey Results?",
+    "title": "Michael Macy, On A Scale From 1 to 5, How Much Confidence Do You Have in Survey Results?",
     "link": "https://www.microsoft.com/en-us/research/event/msr-nyc-data-science-seminar-series/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "THU",
@@ -40,7 +40,7 @@
     "tags": []
   },
   {
-    "title": "What makes us human? Machine learning challenges in digital advertising",
+    "title": "Claudia Perlich, What makes us human? Machine learning challenges in digital advertising",
     "link": "https://www.microsoft.com/en-us/research/video/msr-nyc-data-science-seminar-series-4-what-makes-us-human-machine-learning-challenges-in-digital-advertising/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "THU",
@@ -50,7 +50,7 @@
     "tags": []
   },
   {
-    "title": "Topic Models and User Behavior",
+    "title": "David Blei, Topic Models and User Behavior",
     "link": "https://www.microsoft.com/en-us/research/video/msr-nyc-data-science-seminar-series-3-topic-models-and-user-behavior/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "THU",
@@ -60,7 +60,7 @@
     "tags": []
   },
   {
-    "title": "Small, n=me, data",
+    "title": "Deborah Estrin, Small, n=me, data",
     "link": "https://www.microsoft.com/en-us/research/video/msr-nyc-data-science-seminar-series-2/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "TUE",
@@ -70,7 +70,7 @@
     "tags": []
   },
   {
-    "title": "Opening Event",
+    "title": "Duncan Watts, Opening Event",
     "link": "https://www.microsoft.com/en-us/research/video/msr-nyc-data-science-seminar-series/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "THU",
