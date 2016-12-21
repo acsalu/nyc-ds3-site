@@ -1,3 +1,8 @@
+.eventList {
+  list-style: none;
+  padding-left: 0;
+}
+
 .eventSubList {
   list-style: none;
   padding: 0;
@@ -136,13 +141,66 @@
   margin-top: 20px;
 }
 
-.subscribeMailingList input {
+.subscribeMailingList input:first-child {
   outline-style: none;
-  height: 30px;
+  height: 40px;
   margin-right: 20px;
   width: 40%;
+  border: 1px solid lightgray;
 }
 
 .subscribeButton {
   background-color: orange;
+  outline-style: none;
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  padding: 0 40px;
+  display: inline-block;
 }
+
+@media screen and (max-width: 600px) {
+  .eventList {
+    padding-left: 0;
+  }
+
+  .eventSubListContainer {
+    padding: 0px 0px;
+    margin-bottom: 40px;
+  }
+
+  .noEventConatiner {
+    min-height: 140px;
+  }
+
+  .eventTitle {
+    padding-top: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .eventTitle > i {
+    padding-right: 10px;
+    opacity: 0.0;
+  }
+
+  .eventLocation {
+    background-color: black;
+    color: white;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  .eventDate {
+    background-color: orange;
+    color: white;
+    width: 80px;
+    font-size: 2em;
+  }
+}
+

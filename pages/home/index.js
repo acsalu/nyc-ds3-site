@@ -42,7 +42,7 @@ class HomePage extends React.Component {
 
     return (
       <Layout className={s.content}>
-        <section style={styles.hero}>
+        <section style={styles.hero} className={s.hero}>
           <ul className={`${s.sponsorList} ${s.participatings}`}>
             <li><a href="http://www.nyu.edu/"><img src="./imgs/logos/nyu_short_white.png" alt="New York University" /></a></li>
             <li><a href="https://tech.cornell.edu"><img src="./imgs/logos/cornell-tech-logo.png" alt="Microsoft Research" /></a></li>
@@ -113,9 +113,15 @@ class HomePage extends React.Component {
         <section className={s.footer}>
           <div className={s.container}>
             <div className={s.subscribeMailingList}>
-              <p><i className="fa fa-envelope-o"></i>Join our mailing list</p>
-              <input type="text" placeholder="email address"/> <br/>
-              <Button className={s.footerButton}>Subscribe</Button>
+              <p><i className="fa fa-envelope-o"></i>Subscribe to our mailing list</p>
+              <div id="mc_embed_signup">
+                <form action="//cornell.us3.list-manage.com/subscribe/post?u=9ff7319a6ef1ae54ed30d9609&amp;id=03e76bde6a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="email address" required />
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className={s.subscribeButton} />
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -128,7 +134,7 @@ class HomePage extends React.Component {
 const styles = {
   hero: {
     paddingTop: 60,
-    paddingBottom: 60,
+    paddingBottom: 100,
     backgroundColor: '#5b5f68',
     color: 'white',
     textAlign: 'center',

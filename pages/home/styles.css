@@ -42,6 +42,7 @@
   padding-left: 0;
   flex: 1;
   flex-direction: column;
+  width: 100%;
 }
 
 .tab {
@@ -137,7 +138,7 @@
 }
 
 .footer input {
-  height: 26px;
+  /*height: 26px;*/
   outline-style: none;
 }
 
@@ -170,6 +171,26 @@
   margin-right: 10px;
 }
 
+.subscribeMailingList input:first-child {
+  outline-style: none;
+  height: 40px;
+  margin-right: 20px;
+  width: 300px;
+  border: 1px solid lightgray;
+  display: block;
+}
+
+.subscribeButton {
+  background-color: orange;
+  outline-style: none;
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  padding: 0 40px;
+  margin-top: 14px;
+  display: block;
+}
+
 .participatings {
   margin-bottom: 100px;
 }
@@ -189,10 +210,80 @@
   display: inline-block;
 }
 
+.mc_embed_signup {
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+
 @media screen and (max-width: 1024px) {
 
-  .content {
+  .container {
     padding: 0 16px;
   }
 
+  .hero {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .sponsorList img {
+    height: auto;
+    max-height: 40px;
+    max-width: 80%;
+  }
+
+  .sponsorList {
+    margin-top: 0px;
+  }
+
+  .participatings {
+    margin-bottom: 20px;
+  }
+
+  .siteTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .acronymWrapper {
+    border: 7px solid white;
+    height: 80px;
+    width: 80px;
+  }
+
+  .acronym {
+    height: 50px;
+    line-height: 24px;
+    margin-top: 15px;
+    font-size: 24px;
+    color: white;
+  }
+
+  .sectionTitleText {
+    font-size: 20px;
+    padding: 4px 12px;
+  }
+
+  .sponsors {
+    padding-top: 0;
+  }
+
+  .sponsorList a {
+    font-size: 20px;
+  }
+
+  .subsectionBeginning {
+    margin-top: 0px;
+  }
+
+  .tab {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-color: #607d8b !important;
+    background-image: none !important;
+  }
 }
