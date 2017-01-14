@@ -24,7 +24,7 @@ import organizers from '../../data/organizing-committee.json';
 class HomePage extends React.Component {
 
   static propTypes = {
-    articles: PropTypes.array.isRequired,
+
   };
 
   componentDidMount() {
@@ -44,12 +44,12 @@ class HomePage extends React.Component {
       <Layout className={s.content}>
         <section style={styles.hero} className={s.hero}>
           <ul className={`${s.sponsorList} ${s.participatings}`}>
-            <li><a href="http://www.nyu.edu/"><img src="./imgs/logos/nyu_short_white.png" alt="New York University" /></a></li>
-            <li><a href="https://tech.cornell.edu"><img src="./imgs/logos/cornell-tech-logo.png" alt="Microsoft Research" /></a></li>
-            <li><a href="http://newsroom.fb.com/company-info/"><img src="./imgs/logos/Facebook-06-2015-White-on-Blue.png" alt="Facebook" /></a></li>
+            <li><a target="_blank" href="http://www.nyu.edu/"><img src="./imgs/logos/nyu_short_white.png" alt="New York University" /></a></li>
+            <li><a target="_blank" href="https://tech.cornell.edu"><img src="./imgs/logos/cornell-tech-logo.png" alt="Microsoft Research" /></a></li>
+            <li><a target="_blank" href="http://newsroom.fb.com/company-info/"><img src="./imgs/logos/Facebook-06-2015-White-on-Blue.png" alt="Facebook" /></a></li>
             <br/>
-            <li><a href="http://www.columbia.edu/"><img src="./imgs/logos/CU-logo.png" alt="Columbia University" /></a></li>
-            <li><a href="http://www.microsoft.com/"><img src="./imgs/logos/Microsoft-logo_rgb_wht.png" alt="Microsoft Research" /></a></li>
+            <li><a target="_blank" href="http://www.columbia.edu/"><img src="./imgs/logos/CU-logo.png" alt="Columbia University" /></a></li>
+            <li><a target="_blank" href="http://www.microsoft.com/"><img src="./imgs/logos/Microsoft-logo_rgb_wht.png" alt="Microsoft Research" /></a></li>
           </ul>
           <div className={`${s.container} ${s.heroInnerWrapper}`}>
             <div className={s.acronymWrapper}>
@@ -65,8 +65,8 @@ class HomePage extends React.Component {
               <div className={s.sponsorsInnerWrapper}>
                 <h4><span className={s.sectionTitleText}>Sponsored by</span></h4>
                 <ul className={s.sponsorList}>
-                  <li><a href="">Facebook</a></li>
-                  <li><a href="">Microsoft</a></li>
+                  <li><a target="_blank" href="http://newsroom.fb.com/company-info/">Facebook</a></li>
+                  <li><a target="_blank" href="http://www.microsoft.com/">Microsoft</a></li>
                 </ul>
               </div>
             </div>
