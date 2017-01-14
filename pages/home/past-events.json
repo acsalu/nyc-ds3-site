@@ -20,6 +20,16 @@
     "tags": ["Business", "Conference"]
   },
   {
+    "title": "Susan Athey, Adapting Machine Learning Methods for Causal Inference",
+    "link": "https://www.eventbrite.com/e/nyc-data-science-seminar-series-susan-athey-adapting-machine-learning-methods-for-causal-inference-tickets-23208401955?utm_term=eventpage&invite=OTc2MjU2NC9tb3IubmFhbWFuQGNvcm5lbGwuZWR1LzA%3D&utm_campaign=invitemodernv2&utm_source=eb_email&utm_medium=email&ref=enivte001",
+    "location": "Davis Auditorium, Columbia University",
+    "weekday": "THU",
+    "date": "MAR 24",
+    "time": "6:00 PM",
+    "year": 2016,
+    "tags": ["Business", "Conference"]
+  },
+  {
     "title": "Michael Kearns, From \"In\" to \"Over\": Behavioral Experiments on Whole-Network Computation",
     "link": "https://www.microsoft.com/en-us/research/event/msr-nyc-data-science-seminar-series/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",

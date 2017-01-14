@@ -74,7 +74,7 @@ class EventSubList extends React.Component {
         <ul className={s.eventSubList}>
           {this.props.events.map((event, i) => {
             const eventMonth = event.date.substring(0, 3);
-            const eventDay = event.date.substring(4, 5);
+            const eventDay = event.date.substring(4, event.date.length);
             return (
               <li key={i} className={s.eventItem}>
                 <a href={event.link} style={styles.eventItemAnchor} target='_blank'>
