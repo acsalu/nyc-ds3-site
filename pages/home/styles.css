@@ -281,9 +281,17 @@
   }
 }
 
+.photoCredit a {
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
   .hero {
     background-color: #607d8b !important;
     background-image: none !important;
+  }
+
+  .photoCredit {
+    display: none;
   }
 }

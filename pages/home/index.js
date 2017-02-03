@@ -123,6 +123,12 @@ class HomePage extends React.Component {
                 </form>
               </div>
             </div>
+
+            <div className={s.photoCredit}>
+              Photo by <a href="https://www.flickr.com/photos/despedidairene/7951082654/in/photolist-d7BnRY-EcAw4w-aw6R4P-aw6PcP-9hdoxT-dLz9u6-jc2wNL-fjJ173-jQw1Mn-Byd9kC-eaMk8z-doAsiq-8Tykoh-csLSW1-ehiQm4-s5iLQ5-fnoQiZ-oaRfzh-9tLGz6-ehiJd2-arQ519-arMqEe-arMnZc-arMp9v-arQ5PN-cbWiTh-arMkND-ao462B-EwLuLu-jJTYRT-qXCdSW-bw33eZ-qQTSr4-Nfj5nT-Mzsd4R-Mhyky9-b4576K-MGLto4-cLRAF5-dXS3xT-jJRHWW-xr5W1G-Mhykk3-MyfQUq-MDMqm9-MEvzK5-MHuv1i-MyfQDf-MAVPUZ-cX4AGJ">
+                Diego David Garcia
+              </a>
+            </div>
           </div>
         </section>
       </Layout>
