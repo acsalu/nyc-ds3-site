@@ -17,7 +17,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Button from '../../components/Button';
 import OrganizerList from '../../components/OrganizerList';
 
-import liveEvents from './live-events.json';
+import upcomingEvents from './live-events.json';
 import events from './past-events.json';
 import organizers from '../../data/organizing-committee.json';
 
@@ -85,13 +85,13 @@ class HomePage extends React.Component {
             selectedIndex={0}
           >
             <TabList className={s.tabList}>
-              <Tab className={s.tab}>{"LIVE EVENTS (" + liveEvents.length + ")"}</Tab>
+              <Tab className={s.tab}>{"UPCOMING EVENTS (" + upcomingEvents.length + ")"}</Tab>
               <Tab className={s.tab}>{"PAST EVENTS (" + pastEvents.length + ")"}</Tab>
             </TabList>
 
             <TabPanel>
               <EventList
-                events={liveEvents}
+                events={upcomingEvents}
                 noEventText="More events to be scheduled soon — sign up to our mailing list to be notified."
               />
             </TabPanel>
