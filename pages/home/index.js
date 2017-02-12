@@ -14,12 +14,16 @@ import Layout from '../../components/Layout';
 import s from './styles.css';
 import { title, html } from './index.md';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Button from '../../components/Button';
 import OrganizerList from '../../components/OrganizerList';
 
-import upcomingEvents from './live-events.json';
-import events from './past-events.json';
+import MSREvents from '../../data/msr-events.json';
 import organizers from '../../data/organizing-committee.json';
+import axios from 'axios';
+
+const MONTH_ABBREV = [
+  "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+  "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+];
 
 class HomePage extends React.Component {
 
@@ -27,16 +31,62 @@ class HomePage extends React.Component {
 
   };
 
+  state = {
+    upcomingEvents: [],
+    pastEvents: MSREvents
+  };
+
   componentDidMount() {
     document.title = title;
+
+    const that = this;
+
+    axios
+      .get("https://www.eventbriteapi.com/v3/organizers/8465318311/events/?token=VIRH6LUQJKI37TDV52UR&expand=venue")
+      .then(function(result) {
+        if (result.status === 200) {
+          let ebPastEvents = [];
+          let ebUpcomingEvents = [];
+
+
+          for (let i in result.data.events) {
+
+            const event = result.data.events[i];
+            const date = new Date(event.start.utc);
+            let hour = date.getHours();
+            const minute = date.getMinutes();
+            const timeSuffix = (hour < 12 ? "AM" : "PM");
+            hour = (hour > 12 ? hour - 12 : hour);
+            const eventData = {
+              "title": event.name.text,
+              "link": event.url,
+              "location": event.venue.name,
+              "year": date.getFullYear(),
+              "date": MONTH_ABBREV[date.getMonth()] + " " + date.getDate(),
+              "time": hour + ":" + ("0" + minute).slice(-2) + " " + timeSuffix
+            };
+
+            if (event.status === "completed") {
+              ebPastEvents.push(eventData);
+            } else {
+              ebUpcomingEvents.push(eventData);
+            }
+          }
+
+          that.setState({
+            pastEvents: ebPastEvents.concat(that.state.pastEvents),
+            upcomingEvents: ebUpcomingEvents
+          });
+        }
+      });
   }
 
   handleSelect(index, last) {
-    console.log('Selected tab: ' + index + ', Last tab: ' + last);
+
   }
 
   render() {
-    const pastEvents = events;
+    console.log(this.state);
 
     Tabs.setUseDefaultStyles(false);
 
@@ -85,19 +135,19 @@ class HomePage extends React.Component {
             selectedIndex={0}
           >
             <TabList className={s.tabList}>
-              <Tab className={s.tab}>{"UPCOMING EVENTS (" + upcomingEvents.length + ")"}</Tab>
-              <Tab className={s.tab}>{"PAST EVENTS (" + pastEvents.length + ")"}</Tab>
+              <Tab className={s.tab}>{"UPCOMING EVENTS (" + this.state.upcomingEvents.length + ")"}</Tab>
+              <Tab className={s.tab}>{"PAST EVENTS (" + this.state.pastEvents.length + ")"}</Tab>
             </TabList>
 
             <TabPanel>
               <EventList
-                events={upcomingEvents}
+                events={this.state.upcomingEvents}
                 noEventText="More events to be scheduled soon — sign up to our mailing list to be notified."
               />
             </TabPanel>
             <TabPanel>
               <EventList
-                events={pastEvents}
+                events={this.state.pastEvents}
                 noEventText="Sorry, there were no past events."
               />
             </TabPanel>

@@ -1,53 +1,12 @@
 [
   {
-    "title": "Olga Troyanskaya, Machine-learning Approaches to Genomics: from Big Data to Understanding of Human Disease",
-    "link": "https://www.eventbrite.com/e/nyc-data-science-seminar-series-olga-troyanskaya-machine-learning-approaches-to-genomics-from-big-tickets-31065831739",
-    "location": "Facebook New York",
-    "weekday": "THU",
-    "date": "JAN 26",
-    "time": "6:00 PM",
-    "year": 2017,
-    "tags": ["ScienceTech", "Seminar"]
-  },
-  {
-    "title": "Matt Salganik, Social Research in the Age of Big Data",
-    "link": "https://www.eventbrite.com/e/nyc-data-science-seminar-series-presents-matt-salganik-social-research-in-the-age-of-big-data-tickets-26921832927",
-    "location": "Cornell Tech, New York",
-    "weekday": "THU",
-    "date": "SEP 1",
-    "time": "6:00 PM",
-    "year": 2016,
-    "tags": ["ScienceTech", "Seminar"]
-  },
-  {
-    "title": "Jon Kleinberg, Human Decisions and Machine Predictions",
-    "link": "https://www.eventbrite.com/e/human-decisions-and-machine-predictions-tickets-25540480264#",
-    "location": "Warren Weaver Hall Room 109, New York",
-    "weekday": "THU",
-    "date": "JUN 2",
-    "time": "6:00 PM",
-    "year": 2016,
-    "tags": ["Business", "Conference"]
-  },
-  {
-    "title": "Susan Athey, Adapting Machine Learning Methods for Causal Inference",
-    "link": "https://www.eventbrite.com/e/nyc-data-science-seminar-series-susan-athey-adapting-machine-learning-methods-for-causal-inference-tickets-23208401955?utm_term=eventpage&invite=OTc2MjU2NC9tb3IubmFhbWFuQGNvcm5lbGwuZWR1LzA%3D&utm_campaign=invitemodernv2&utm_source=eb_email&utm_medium=email&ref=enivte001",
-    "location": "Davis Auditorium, Columbia University",
-    "weekday": "THU",
-    "date": "MAR 24",
-    "time": "6:00 PM",
-    "year": 2016,
-    "tags": ["Business", "Conference"]
-  },
-  {
     "title": "Michael Kearns, From \"In\" to \"Over\": Behavioral Experiments on Whole-Network Computation",
     "link": "https://www.microsoft.com/en-us/research/event/msr-nyc-data-science-seminar-series/",
     "location": "Microsoft Research New York (641 Avenue of the Americas, New York)",
     "weekday": "THU",
     "date": "JUN 25",
     "year": 2015,
-    "time": "6:00 PM",
-    "tags": []
+    "time": "6:00 PM"
   },
   {
     "title": "Michael Macy, On A Scale From 1 to 5, How Much Confidence Do You Have in Survey Results?",
@@ -56,8 +15,7 @@
     "weekday": "THU",
     "date": "APR 16",
     "year": 2015,
-    "time": "6:00 PM",
-    "tags": []
+    "time": "6:00 PM"
   },
   {
     "title": "Claudia Perlich, What makes us human? Machine learning challenges in digital advertising",
@@ -66,8 +24,7 @@
     "weekday": "THU",
     "date": "FEB 5",
     "year": 2015,
-    "time": "6:00 PM",
-    "tags": []
+    "time": "6:00 PM"
   },
   {
     "title": "David Blei, Topic Models and User Behavior",
@@ -76,8 +33,7 @@
     "weekday": "THU",
     "date": "DEC 4",
     "year": 2014,
-    "time": "6:00 PM",
-    "tags": []
+    "time": "6:00 PM"
   },
   {
     "title": "Deborah Estrin, Small, n=me, data",
@@ -96,7 +52,6 @@
     "weekday": "THU",
     "date": "APR 14",
     "year": 2014,
-    "time": "6:00 PM",
-    "tags": []
+    "time": "6:00 PM"
   }
 ]

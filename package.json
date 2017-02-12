@@ -7,11 +7,14 @@
     "npm": ">=3.8"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "babel-polyfill": "^6.9.1",
     "classnames": "^2.2.5",
+    "eventbrite": "^0.1.6",
     "fastclick": "^1.0.6",
     "history": "^3.0.0",
     "muicss": "^0.9.5",
+    "node-eventbrite": "0.0.13",
     "react": "^15.4.1",
     "react-dom": "^15.2.1",
     "react-fa": "^4.1.2",
