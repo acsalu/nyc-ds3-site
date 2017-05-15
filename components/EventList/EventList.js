@@ -89,8 +89,10 @@ class EventSubList extends React.Component {
                         <div>{event.title}</div>
                         <i className='fa fa-external-link'></i>
                       </div>
-                      <div className={s.eventTime}><i className='fa fa-clock-o'></i>{event.time}</div>
-                      <div className={s.eventLocation}><i className='fa fa-map-marker'></i>{event.location}</div>
+                      <div className={s.eventInfo}>
+                        <span className={s.eventTime}><i className='fa fa-clock-o'></i>{event.time}</span>
+                        <span className={s.eventLocation}><i className='fa fa-map-marker'></i>{event.location}</span>
+                      </div>
                     </div>
                   </div>
                 </a>

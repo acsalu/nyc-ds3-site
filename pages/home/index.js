@@ -25,6 +25,10 @@ const MONTH_ABBREV = [
   "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
 ];
 
+const WEEKDAY_ABBREV = [
+  "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"
+];
+
 class HomePage extends React.Component {
 
   static propTypes = {
@@ -57,12 +61,29 @@ class HomePage extends React.Component {
             const minute = date.getMinutes();
             const timeSuffix = (hour < 12 ? "AM" : "PM");
             hour = (hour > 12 ? hour - 12 : hour);
+
+            let eventTitle = event.name.text;
+
+            const eventTitlePrefices = [
+              'NYC Data Science Seminar Series -- ',
+              'New York Data Science Seminar Series -- ',
+              'NYC Data Science Seminar Series: '
+            ];
+
+            for (const prefix of eventTitlePrefices) {
+              if (eventTitle.startsWith(prefix)) {
+                eventTitle = eventTitle.substring(prefix.length);
+                break;
+              }
+            }
+
             const eventData = {
-              "title": event.name.text,
+              "title": eventTitle,
               "link": event.url,
               "location": event.venue.name,
               "year": date.getFullYear(),
               "date": MONTH_ABBREV[date.getMonth()] + " " + date.getDate(),
+              "weekday": WEEKDAY_ABBREV[date.getDay()],
               "time": hour + ":" + ("0" + minute).slice(-2) + " " + timeSuffix
             };
 
