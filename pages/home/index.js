@@ -52,9 +52,7 @@ class HomePage extends React.Component {
           let ebPastEvents = [];
           let ebUpcomingEvents = [];
 
-
           for (let i in result.data.events) {
-
             const event = result.data.events[i];
             const date = new Date(event.start.utc);
             let hour = date.getHours();
@@ -78,13 +76,15 @@ class HomePage extends React.Component {
             }
 
             const eventData = {
-              "title": eventTitle,
-              "link": event.url,
-              "location": event.venue.name,
-              "year": date.getFullYear(),
-              "date": MONTH_ABBREV[date.getMonth()] + " " + date.getDate(),
-              "weekday": WEEKDAY_ABBREV[date.getDay()],
-              "time": hour + ":" + ("0" + minute).slice(-2) + " " + timeSuffix
+              title: eventTitle,
+              link: event.url,
+              location: event.venue.name,
+              year: date.getFullYear(),
+              month: date.getMonth(),
+              day: date.getDate(),
+              date: MONTH_ABBREV[date.getMonth()] + " " + date.getDate(),
+              weekday: WEEKDAY_ABBREV[date.getDay()],
+              time: hour + ":" + ("0" + minute).slice(-2) + " " + timeSuffix
             };
 
             if (event.status === "completed") {
@@ -164,12 +164,14 @@ class HomePage extends React.Component {
               <EventList
                 events={this.state.upcomingEvents}
                 noEventText="More events to be scheduled soon — sign up to our mailing list to be notified."
+                chornological={true}
               />
             </TabPanel>
             <TabPanel>
               <EventList
                 events={this.state.pastEvents}
                 noEventText="Sorry, there were no past events."
+                chornological={false}
               />
             </TabPanel>
           </Tabs>

@@ -10,7 +10,8 @@ class EventList extends React.Component {
 
   static propTypes = {
     events: PropTypes.array.isRequired,
-    noEventText: PropTypes.string.isRequired
+    noEventText: PropTypes.string.isRequired,
+    chronological: PropTypes.bool.isRequired
   };
 
   render() {
@@ -41,6 +42,17 @@ class EventList extends React.Component {
         eventsByYear[year] = [];
       }
       eventsByYear[year].push(event);
+    }
+
+    if (!this.props.chronological) {
+      for (const year in eventsByYear) {
+        eventsByYear[year] = eventsByYear[year].sort((e1, e2) => {
+          const token1 = e1.month * 31 + e1.day;
+          const token2 = e2.month * 31 + e2.day;
+          if (token1 === token2) { return 0; }
+          return token1 > token2 ? -1 : 1;
+        });
+      }
     }
 
     const yearsSortedDescending = Object.keys(eventsByYear).sort().reverse();
