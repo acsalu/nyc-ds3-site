@@ -10,6 +10,7 @@
 
 import React from 'react';
 import Navigation from './Navigation';
+import MetaTags from 'react-meta-tags'
 import Link from '../Link';
 import s from './Header.css';
 
@@ -26,6 +27,12 @@ class Header extends React.Component {
   render() {
     return (
       <header className={`mdl-layout__header ${s.header}`} ref={node => (this.root = node)}>
+        <MetaTags>
+          <title>NYC Data Science Seminar Series (DS3)</title>
+          <meta name="description" content="This seminar series is bringing data science researchers from Columbia University, NYU, Cornell Tech and Microsoft Research together. Our goal is to increase interactions within the broader New York data science community, and to provide a new forum for discussions on data science research." />
+          <meta property="og:title" content="MyApp" />
+          <meta property="og:image" content="path/to/image.jpg" />
+        </MetaTags>
         <div className={`mdl-layout__header-row ${s.row}`}>
           <Link className={`mdl-layout-title ${s.title}`} to="/">
             NYC DS3

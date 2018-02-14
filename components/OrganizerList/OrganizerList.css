@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700');
+}
+
 .organizerList {
   list-style: none;
   padding-left: 0px;
@@ -12,7 +17,7 @@
 .organizerList li a {
   text-decoration: none;
   margin: 0 auto;
-  color: black;
+  color: #888;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,25 +32,32 @@
 }
 
 .organizerList img {
-  height: 100px;
-  border-radius: 50px;
-  border: 3px solid gray;
+  height: 115px;
+  border-radius: 50%;
+  border: 2px solid #fff;
   margin: 0 auto;
+  display: block;
 }
 
 .organizerList li a p {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .organizerName {
-  margin-top: 7px;
-  margin-bottom: -2px;
-  font-size: 16px;
+  margin-top: 12px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
 }
 
 .organizerOrganization {
-  font-size: 12px;
-  color: gray;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #aaa;
+  margin-top: 4px;
 }
 
 .eventItem {

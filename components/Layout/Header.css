@@ -8,27 +8,37 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-.row {
-  padding: 40px;
+@font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700');
 }
 
 .title {
   color: #fff;
   text-decoration: none;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  letter-spacing: 1px;
 }
 
 .header {
-  background-color: black;
+  background-color: #222;
+  height: 50px;
+  min-height: 50px;
+}
+
+.row {
+  padding: 0 80px 0 80px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1024px) {
 
   .header {
     display: flex;
-  }
-
-  .row {
-    padding: 0 16px;
+    height: 50px;
+    min-height: 50px;
   }
 
 }

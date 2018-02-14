@@ -4,9 +4,9 @@
 
 import React, { PropTypes } from 'react';
 import Button from '../Button';
-import s from './EventList.css';
+import s from './PrevEventList.css';
 
-class EventList extends React.Component {
+class PrevEventList extends React.Component {
 
   static propTypes = {
     events: PropTypes.array.isRequired,
@@ -74,7 +74,9 @@ class EventList extends React.Component {
     return (
       <ul className={s.eventList}>
         {eventSubLists}
-
+        <div className={s.expandText} onClick={() => this.setState({value: yearsSortedDescending.length, text: 'All events shown'})}>
+          {this.state.text}
+        </div>
       </ul>
     );
   }
@@ -134,4 +136,4 @@ const styles = {
   }
 };
 
-export default EventList;
+export default PrevEventList;
