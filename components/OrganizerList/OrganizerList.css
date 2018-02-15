@@ -12,6 +12,7 @@
 .organizerList li {
   display: inline-block;
   width: 20%;
+  margin-bottom: 40px;
 }
 
 .organizerList li a {

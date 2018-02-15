@@ -28,5 +28,29 @@
     "organization": "Columbia University",
     "profilePic": "./imgs/wiggins.jpg",
     "website": "http://www.columbia.edu/~chw2/"
+  },
+  {
+    "name": "Shipra Agrawal",
+    "organization": "Columbia University",
+    "profilePic": "./imgs/agrawal.png",
+    "website": "http://www.columbia.edu/~sa3305/"
+  },
+  {
+    "name": "Nathan Kallus",
+    "organization": "Cornell Tech",
+    "profilePic": "./imgs/kallus.jpg",
+    "website": "http://www.nathankallus.com/"
+  },
+  {
+    "name": "Alex Peysakhovich",
+    "organization": "Facebook",
+    "profilePic": "./imgs/peysakhovich.jpg",
+    "website": "http://alexpeys.github.io/"
+  },
+  {
+    "name": "Rajesh Ranganath",
+    "organization": "New York University",
+    "profilePic": "./imgs/ranganath.jpg",
+    "website": "https://www.cs.princeton.edu/~rajeshr/"
   }
 ]
