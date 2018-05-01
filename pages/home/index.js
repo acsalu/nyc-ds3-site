@@ -137,7 +137,7 @@ class HomePage extends React.Component {
 
         <section className={`${s.container} ${s.contentSection}`}>
 
-          <a name="events"></a>
+          <a name="events" id='events'></a>
           <div className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Events</span></h4>
           </div>
@@ -168,12 +168,12 @@ class HomePage extends React.Component {
           </Tabs>
           </div>
           
-          <a name="organizing-committee"></a>
+          <a name="organizing-committee" id='organizers'></a>
           <div className={s.subsectionBeginning}>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Organizing Committee</span></h4>
           </div>
           <OrganizerList organizers={organizers}/>
-          <div className={s.subsectionBeginning}>
+          <div className={s.subsectionBeginning} name='sponsors' id='sponsors'>
             <h4 className={s.sectionTitle}><span className={s.sectionTitleText}>Sponsors</span></h4>
           </div>
             <div className={`${s.sponsored}`}>
