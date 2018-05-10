@@ -52,5 +52,11 @@
     "organization": "New York University",
     "profilePic": "./imgs/ranganath.jpg",
     "website": "https://www.cs.princeton.edu/~rajeshr/"
+  },
+  {
+    "name": "Jake Hofman",
+    "organization": "Microsoft Research NYC",
+    "profilePic": "./imgs/hofman.jpg",
+    "website": "http://jakehofman.com/"
   }
 ]
